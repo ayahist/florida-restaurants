@@ -15,7 +15,7 @@ This project analyzes more than 681,000 Florida restaurant inspections to unders
 
 The data comes from the Florida Department of Business and Professional Regulation (DBPR) restaurant inspection records.
 
-(Data source link)
+[(Data source link)](https://www2.myfloridalicense.com/hotels-restaurants/public-records/#inspections)
 
 ## Data collection
 
@@ -43,3 +43,5 @@ Charts were created using Datawrapper.
 ## Published project
 
 https://ayahist.github.io/florida-restaurants/
+=======
+

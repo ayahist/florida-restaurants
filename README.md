@@ -33,19 +33,6 @@ The analysis compared:
 
 Charts were created using Datawrapper.
 
-## Skills I learned
-
-This project helped me practice:
-
-- Cleaning large datasets with pandas
-- Aggregating and comparing inspection data
-- Building Datawrapper visualizations
-- Designing a responsive scrollytelling webpage with HTML and CSS
-
-## What I'd improve
-
-Given more time, I would add interviews with restaurant inspectors or public health experts, incorporate geographic patterns across Florida, and make the charts more interactive.
-
 ## Files
 
 - notebooks/ — data cleaning and analysis

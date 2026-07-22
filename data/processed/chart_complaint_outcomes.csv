@@ -1,0 +1,18 @@
+outcome,inspections,percent
+Inspection Completed - No Further Action,29058,45.86319012595095
+Call Back - Complied,10978,17.32693582499448
+Warning Issued,9062,14.302850468764797
+Administrative complaint recommended,5022,7.926386565232487
+Call Back - Admin. complaint recommended,2289,3.612803434451845
+Emergency order recommended,2044,3.2261119353514944
+"Call Back - Extension given, pending",2008,3.1692919599734837
+Emergency Order Callback Complied,1527,2.4101139556172857
+Emergency Order Callback Not Complied,960,1.515199343413618
+Emergency Order Callback Time Extension,311,0.49086145396003666
+Assigned to Inspector,54,0.085229963067016
+Administrative determination recommended,14,0.022096657091448594
+Not available electronically,12,0.018939991792670224
+Admin. Complaint Callback Complied,8,0.012626661195113482
+"Insp. Completed - Warning Given, Pending",5,0.007891663246945927
+Admin. Complaint Callback Not Complied,3,0.004734997948167556
+Allegation Not Observed,3,0.004734997948167556

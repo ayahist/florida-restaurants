@@ -40,8 +40,7 @@ Charts were created using Datawrapper.
 - charts/ — Datawrapper assets
 - images/ — project graphics
 
-## Published project
 
-https://ayahist.github.io/florida-restaurants/
-=======
+## Link
 
+[(Website)](https://ayahist.github.io/florida-restaurants/)

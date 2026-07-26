@@ -740,302 +740,284 @@ strong {
         transition: none;
     }
 }
-/* ========================================
-   MOBILE FIXES
-   Paste at the very bottom of style.css
-======================================== */
+
+/* --------------------------------
+   FINAL RESPONSIVE OVERRIDES
+-------------------------------- */
 
 html,
 body {
+    width: 100%;
     max-width: 100%;
     overflow-x: hidden;
 }
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-img,
-iframe,
-svg {
-    max-width: 100%;
-}
-
-/* Prevent any section from creating horizontal overflow */
-section,
-main,
-article,
-div {
+.hero-content,
+.statement-inner,
+.story-text,
+.graphic,
+.conclusion-inner,
+.methodology-inner {
     min-width: 0;
 }
 
-/* -----------------------------
-   HERO
------------------------------ */
-
-.hero {
-    min-height: 100svh;
-    height: auto;
-    padding: 40px 24px 60px;
-}
-
-.hero-inner,
-.hero-content {
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.hero .byline,
-.byline {
-    position: static;
-    display: block;
-    margin: 24px auto 0;
-    text-align: center;
-    line-height: 1.3;
-}
-
-.hero .scroll-cue,
-.scroll-cue,
-.scroll-indicator {
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-    margin: 14px auto 0;
-    transform: none;
-}
-
-/* -----------------------------
-   MOBILE
------------------------------ */
-
-@media (max-width: 700px) {
-
-    body {
-        width: 100%;
-        overflow-x: hidden;
-    }
-
-    /* Hero */
-    .hero {
-        min-height: auto;
-        padding: 42px 20px 56px;
-    }
-
-    .hero h1,
-    .hero-title {
-        font-size: clamp(3.1rem, 14vw, 4.6rem);
-        line-height: 0.9;
-        letter-spacing: -0.045em;
-        overflow-wrap: anywhere;
-    }
-
-    .hero .dek,
-    .hero .subtitle,
-    .hero-subtitle {
-        max-width: 32rem;
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 1.15rem;
-        line-height: 1.4;
-    }
-
-    .byline {
-        margin-top: 24px;
-        font-size: 0.9rem;
-    }
-
-    .scroll-cue,
-    .scroll-indicator {
-        margin-top: 14px;
-        font-size: 0.7rem;
-        letter-spacing: 0.12em;
-    }
-
-    /* General content spacing */
-    .story-section,
-    .content-section,
-    .section-inner,
-    .text-block,
-    .methodology,
-    .takeaway {
-        width: 100%;
-        max-width: none;
-        padding-left: 28px;
-        padding-right: 28px;
-    }
-
-    /* Large numbered section headings */
-    .section-title,
-    .story-section h2,
-    .content-section h2,
-    .takeaway h2,
-    .methodology h2 {
-        max-width: 100%;
-        font-size: clamp(3rem, 13vw, 4.5rem);
-        line-height: 0.93;
-        letter-spacing: -0.04em;
-        overflow-wrap: anywhere;
-    }
-
-    /* Full-screen transition statements */
-    .transition,
-    .transition-section,
-    .statement-section,
-    .big-statement {
-        min-height: auto;
-        height: auto;
-        padding: 90px 28px;
-        overflow: hidden;
-    }
-
-    .transition h2,
-    .transition-section h2,
-    .statement-section h2,
-    .big-statement h2 {
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        font-size: clamp(3.5rem, 15vw, 5.5rem);
-        line-height: 0.88;
-        letter-spacing: -0.055em;
-        overflow-wrap: anywhere;
-        word-break: normal;
-    }
-
-    /* Smaller introductory line above transition text */
-    .transition p,
-    .transition-section p,
-    .statement-section p,
-    .big-statement p {
-        width: 100%;
-        max-width: 100%;
-        font-size: clamp(1.7rem, 7vw, 2.6rem);
-        line-height: 1.05;
-    }
-
-    /* Story paragraphs */
-    p {
-        max-width: 100%;
-    }
-
-    .story-copy,
-    .text-block p,
-    .takeaway p,
-    .methodology p {
-        font-size: 1.15rem;
-        line-height: 1.65;
-    }
-
-    /* Charts */
-    .graphic,
-    .chart,
-    .chart-container,
-    .datawrapper-chart {
-        width: 100%;
-        max-width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        overflow: visible;
-    }
-
-    .graphic iframe,
-    .chart iframe,
-    .chart-container iframe {
-        display: block;
-        width: 100% !important;
-        max-width: 100% !important;
-        border: 0;
-    }
-
-    /* Remove desktop side-by-side layout */
-    .split,
-    .split-section,
-    .story-row,
-    .two-column,
-    .section-grid {
-        display: block;
-        width: 100%;
-    }
-
-    .split > *,
-    .split-section > *,
-    .story-row > *,
-    .two-column > *,
-    .section-grid > * {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    /* Takeaway */
-    .takeaway {
-        padding-top: 90px;
-        padding-bottom: 90px;
-    }
-
-    .takeaway h2 {
-        font-size: clamp(3.3rem, 13vw, 4.8rem);
-        line-height: 0.93;
-    }
-
-    /* Methodology */
-    .methodology {
-        padding-top: 80px;
-        padding-bottom: 80px;
-    }
-
-    .methodology h2 {
-        font-size: clamp(3.5rem, 14vw, 5rem);
-    }
-}
-
-/* ========================================
-   DESKTOP HERO BYLINE + SCROLL FIX
-======================================== */
-
+/* Desktop hero spacing */
 @media (min-width: 701px) {
     .hero {
         min-height: 100vh;
-        height: auto;
-        padding: 70px 32px 80px;
+        padding: 72px 24px 64px;
     }
 
-    .hero-inner,
     .hero-content {
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;
     }
 
-    .hero .byline,
     .byline {
         position: static;
-        display: block;
-        margin: 24px auto 0;
-        text-align: center;
+        margin: 0;
         line-height: 1.3;
     }
 
-    .hero .scroll-cue,
-    .scroll-cue,
-    .scroll-indicator {
+    .scroll-cue {
         position: static;
         transform: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 8px;
-        margin: 18px auto 0;
-        text-align: center;
+        margin-top: 18px;
+    }
+}
+
+/* Phone layout */
+@media (max-width: 600px) {
+    .hero {
+        min-height: auto;
+        padding: 52px 20px 58px;
+        overflow: hidden;
     }
 
-    .scroll-cue span,
-    .scroll-indicator span {
+    .hero-content {
+        width: 100%;
+    }
+
+    .kicker {
+        margin-bottom: 18px;
+        font-size: 0.7rem;
+    }
+
+    .hero h1 {
+        max-width: 100%;
+        margin-bottom: 22px;
+        font-size: clamp(2.8rem, 13vw, 4.15rem);
+        line-height: 0.92;
+        letter-spacing: -0.055em;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .hero h1::after {
+        width: 72px;
+        height: 4px;
+        margin-top: 24px;
+    }
+
+    .deck {
+        margin-bottom: 20px;
+        font-size: 1.03rem;
+        line-height: 1.45;
+    }
+
+    .byline {
+        position: static;
+        margin: 0;
+        font-size: 0.82rem;
+        line-height: 1.3;
+    }
+
+    .scroll-cue {
+        position: static;
+        transform: none;
+        margin: 16px auto 0;
+        font-size: 0.65rem;
+        line-height: 1.2;
+    }
+
+    .scroll-cue span {
+        font-size: 1.15rem;
+    }
+
+    .intro,
+    .story,
+    .story-reverse {
         display: block;
+        width: calc(100% - 36px);
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .intro {
+        padding: 72px 0;
+    }
+
+    .number-block {
+        margin-bottom: 44px;
+    }
+
+    .count-up {
+        font-size: clamp(3.9rem, 19vw, 5.7rem);
+        letter-spacing: -0.07em;
+    }
+
+    .number-block p {
+        max-width: 290px;
+        margin-top: 18px;
+        font-size: 0.75rem;
+    }
+
+    .intro-copy p {
+        font-size: 1.12rem;
+        line-height: 1.55;
+    }
+
+    .story,
+    .story-reverse {
+        padding: 72px 0;
+    }
+
+    .story-reverse .story-text,
+    .story-reverse .graphic {
+        order: initial;
+    }
+
+    .story-reverse .story-text {
+        margin-bottom: 34px;
+    }
+
+    .story > .story-text {
+        margin-bottom: 34px;
+    }
+
+    .story-reverse > .graphic {
+        margin-bottom: 34px;
+    }
+
+    .story-text {
+        width: 100%;
+        max-width: none;
+    }
+
+    .chapter {
+        margin-bottom: 16px;
+    }
+
+    .story-text h2 {
+        max-width: 100%;
+        margin-bottom: 20px;
+        font-size: clamp(2.55rem, 11.8vw, 3.65rem);
+        line-height: 0.96;
+        letter-spacing: -0.05em;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .story-text p {
+        font-size: 1rem;
+        line-height: 1.68;
+    }
+
+    .graphic {
+        width: 100%;
+        min-height: 0;
+        padding: 10px;
+        overflow: visible;
+    }
+
+    .graphic iframe {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+    }
+
+    .statement {
+        min-height: auto;
+        padding: 76px 24px;
+        overflow: hidden;
+    }
+
+    .statement p {
+        max-width: 100%;
+        margin-bottom: 16px;
+        font-size: clamp(1.6rem, 7.2vw, 2.25rem);
+        line-height: 1.12;
+    }
+
+    .statement h2 {
+        max-width: 100%;
+        font-size: clamp(3.45rem, 15.2vw, 5rem);
+        line-height: 0.86;
+        letter-spacing: -0.065em;
+        overflow-wrap: normal;
+        word-break: normal;
+    }
+
+    .quiz {
+        padding: 84px 20px;
+    }
+
+    .quiz h2 {
+        margin-bottom: 34px;
+        font-size: clamp(2.35rem, 10.5vw, 3.4rem);
+        line-height: 1;
+    }
+
+    .answers {
+        display: grid;
+        gap: 12px;
+    }
+
+    .answers button {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .stat-pair {
+        grid-template-columns: 1fr;
+    }
+
+    .story-final {
+        display: block;
+        width: 100%;
+        padding: 78px 24px;
+    }
+
+    .story-final .story-text {
+        margin-bottom: 36px;
+    }
+
+    .story-final .story-text h2 {
+        font-size: clamp(2.8rem, 11.6vw, 3.8rem);
+        line-height: 0.95;
+    }
+
+    .conclusion {
+        padding: 88px 24px;
+    }
+
+    .conclusion h2 {
+        font-size: clamp(2.9rem, 11.5vw, 3.9rem);
+        line-height: 0.96;
+    }
+
+    .conclusion p:last-child {
+        font-size: 1.1rem;
+        line-height: 1.58;
+    }
+
+    .methodology {
+        padding: 76px 24px 86px;
+    }
+
+    .methodology h3 {
+        font-size: clamp(2.7rem, 11vw, 3.5rem);
+        line-height: 1;
     }
 }

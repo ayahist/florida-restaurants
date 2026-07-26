@@ -992,3 +992,50 @@ div {
         font-size: clamp(3.5rem, 14vw, 5rem);
     }
 }
+
+/* ========================================
+   DESKTOP HERO BYLINE + SCROLL FIX
+======================================== */
+
+@media (min-width: 701px) {
+    .hero {
+        min-height: 100vh;
+        height: auto;
+        padding: 70px 32px 80px;
+    }
+
+    .hero-inner,
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .hero .byline,
+    .byline {
+        position: static;
+        display: block;
+        margin: 24px auto 0;
+        text-align: center;
+        line-height: 1.3;
+    }
+
+    .hero .scroll-cue,
+    .scroll-cue,
+    .scroll-indicator {
+        position: static;
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+        margin: 18px auto 0;
+        text-align: center;
+    }
+
+    .scroll-cue span,
+    .scroll-indicator span {
+        display: block;
+    }
+}
